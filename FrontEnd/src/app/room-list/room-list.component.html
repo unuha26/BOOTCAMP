@@ -1,6 +1,4 @@
-<div *ngFor="let r of roomList">
+<div *ngFor="let r of GetRoom(); index as i;">
   <p>ROOM NAME: {{ r.name }}</p>
-  <p>PRICE: {{ r.price }}</p>
-  <p>ROOM NUMBER: {{ r.number }}</p>
-  <button type="" (click)="order()" ></button>
+  <button type="" (click)="Book(r.name)" >BOOK</button>
 </div>
