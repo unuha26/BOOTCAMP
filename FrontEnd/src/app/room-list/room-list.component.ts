@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./room-list.component.css']
 })
 export class RoomListComponent implements OnInit {
-
+roomList :object[] = [];
   constructor() { }
 
   ngOnInit() {
