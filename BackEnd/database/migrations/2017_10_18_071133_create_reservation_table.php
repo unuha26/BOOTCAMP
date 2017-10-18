@@ -13,14 +13,10 @@ class CreateTransactionDetailsTable extends Migration
      */
     public function up()
     {
-        Schema::create('transaction_details', function (Blueprint $table) {
-            $table->timestamp('TransactionDate');
+        Schema::create('transaction', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('Room_id')->unsigned();
-                $table->foreign('Room_id')->references('id')->on('rooms');
-            $table->integer('Customer_id')->unsigned();
-                $table->foreign('Customer_id')->references('id')->on('customers');
-            $table->integer('price');
+            $table->integer('user_id')->unsigned();
+                $table->foreign('user_id')->references('id')->on('user');
             $table->date('CheckInDate');
             $table->date('CheckOutDate');
         });
@@ -33,6 +29,6 @@ class CreateTransactionDetailsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('transaction_details');
+        Schema::dropIfExists('transaction');
     }
 }

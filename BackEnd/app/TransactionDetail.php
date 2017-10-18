@@ -8,12 +8,11 @@ class TransactionDetail extends Model
 {
     protected $connection = 'mysql';
     protected $primaryKey = 'id';
-    protected $foreignKey = 'Room_id, Customer_id';
-    protected $table = 'transaction_details';
+    protected $foreignKey = 'Room_id, user_id';
+    protected $table = 'reservation';
     protected $fillable = array(
-        'TransactionDate',
-        'price',
-        'CheckInDate',
-        'CheckOutDate',
+        'user_id',
+        'dateIn',
+        'dateOut',
     );
 }
