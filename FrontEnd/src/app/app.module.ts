@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';//ini
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { RoomListComponent } from './room-list/room-list.component';
@@ -21,7 +21,7 @@ import { UserComponent } from './user/user.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot([//ini
+    RouterModule.forRoot([
       {path : '', component : RoomListComponent}
     ])
   ],
