@@ -12,7 +12,7 @@ roomList :object[] = [];
 
   ngOnInit() {
   }
-RoomList : object[] = [{'name' : 'Room 101', 'availability' : true},{'room_name' : 'Room 102', 'availability' : true},{'room_name' : 'Room 103', 'availability' : true}];
+RoomList : object[] = [{'name' : 'Room 1', 'availability' : true},{'name' : 'Room 2', 'availability' : true},{'name' : 'Room 3', 'availability' : true}];
 GetRoom() : object[] {
     var available : object[] = [];
     for (var i = 0; i < this.RoomList.length; i++) {
